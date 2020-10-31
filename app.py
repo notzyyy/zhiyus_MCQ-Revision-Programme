@@ -3,7 +3,9 @@ print()
 
 counter = 0
 score = 0
-total_num_of_qn = 4
+
+total_num_of_qn = 5
+
 
 tracker = 0
 
@@ -42,7 +44,7 @@ while tracker ==1:
   print()
   print()
   
-  
+
   
 counter +=1
 
@@ -66,7 +68,7 @@ while tracker ==2:
     tracker +=1
     score +=1
   elif answer == "d":
-    output = "This is not addition!"
+    output = "Wrong. This is not addition!"
     score -=1
   else:
     output = "Please choose a, b, c or d only."
@@ -133,12 +135,11 @@ while tracker ==4:
     score -=1
   elif answer == "b":
     output = "Yes, that's right! The noun form of attract is attraction."
-    tracker =1
+    tracker +=1
     score +=1
   elif answer == "c":
     output = "Wrong.  This is the past participle of attract."
     score -=1
-    
   elif answer == "d":
     output = "Wrong. This is the adjective of attract."
     score -=1
@@ -154,5 +155,44 @@ while tracker ==4:
   print()
   print()
   
-print("End of quiz!")
   
+  
+counter +=1
+
+while tracker ==5:
+  
+  print("Q"+str(counter)+") "+ "What is 10 / 2?")
+  print("   a) 5")
+  print("   b) 12")
+  print("   c) 8")
+  print("   d) 20")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "This is correct!"
+    tracker +=1
+    score +=1
+  elif answer == "b":
+    output = "Wrong. This is not addition."
+    tracker +=1
+    score +=1
+  elif answer == "c":
+    output = "Wrong. This is not subtraction"
+    score -=1
+  elif answer == "d":
+    output = "Wrong. This is not multiplication"
+    score -=1
+  else:
+    output = "Please choose a, b, c or d only."
+
+  
+
+  print()
+  print(output.lower())
+  print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
+  
+print("End of quiz!")
