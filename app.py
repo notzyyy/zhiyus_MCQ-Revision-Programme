@@ -3,7 +3,9 @@ print()
 
 counter = 0
 score = 0
+
 total_num_of_qn = 5
+
 
 tracker = 0
 
@@ -42,9 +44,9 @@ while tracker ==1:
   print()
   print()
   
-  
 
-  counter +=1
+  
+counter +=1
 
 while tracker ==2:
   
@@ -76,8 +78,9 @@ while tracker ==2:
   print()
   print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
   print()
-  
+  print()
 
+  
   
 counter +=1
 
@@ -176,7 +179,6 @@ while tracker ==5:
   elif answer == "c":
     output = "Wrong. This is not subtraction"
     score -=1
-    
   elif answer == "d":
     output = "Wrong. This is not multiplication"
     score -=1
